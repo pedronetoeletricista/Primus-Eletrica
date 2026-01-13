@@ -1,5 +1,5 @@
 import { Phone, Clock } from 'lucide-react';
-//import logo from 'assets/PRIMUS.png';
+import logo from '/Primus-Eletrica/src/assets/PRIMUS.png';
 
 export function Hero() {
   return (
