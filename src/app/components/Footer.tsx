@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
-import logo from 'figma:asset/d9f1f177407789c939b29e579d198ebcfb75c1ec.png';
+//import logo from 'root/src/assets/PRIMUS.png';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
