@@ -1,5 +1,6 @@
 import { Phone, Clock } from 'lucide-react';
-import logo from "../../../assets/PRIMUS.png";
+import logo from "../../assets/PRIMUS.png";
+
 
 export function Hero() {
   return (

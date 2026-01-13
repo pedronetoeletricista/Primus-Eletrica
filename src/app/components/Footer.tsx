@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
-import logo from "../../../assets/PRIMUS.png";
+import logo from "../../assets/PRIMUS.png";
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
   
