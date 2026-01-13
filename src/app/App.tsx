@@ -4,6 +4,7 @@ import { WhyChooseUs } from './components/WhyChooseUs';
 import { Testimonials } from './components/Testimonials';
 import { Contact } from './components/Contact';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
+import { MobileFixedButtons } from './components/MobileFixedButtons';
 import { Footer } from './components/Footer';
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
       <Contact />
       <Footer />
       <FloatingWhatsApp />
+      <MobileFixedButtons />
     </div>
   );
 }

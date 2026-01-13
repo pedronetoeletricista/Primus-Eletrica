@@ -12,8 +12,19 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica de envio do formulário
-    alert('Mensagem enviada! Entraremos em contato em breve.');
+    
+    // Envia via WhatsApp com mensagem pré-preenchida
+    const message = `Olá! Gostaria de solicitar um orçamento:
+    
+*Nome:* ${formData.name}
+*Email:* ${formData.email}
+*Telefone:* ${formData.phone}
+*Serviço:* ${formData.service}
+*Mensagem:* ${formData.message}`;
+    
+    const whatsappUrl = `https://wa.me/5513997177485?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+    
     setFormData({ name: '', email: '', phone: '', service: '', message: '' });
   };
 
@@ -47,8 +58,8 @@ export function Contact() {
                   <Phone className="w-6 h-6 text-[#1E3A5F]" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#1E3A5F] mb-1">Telefone</h4>
-                  <p className="text-gray-600">(11) 99999-9999</p>
+                  <h4 className="font-semibold text-[#1E3A5F] mb-1">Telefone / WhatsApp</h4>
+                  <p className="text-gray-600">(13) 99717-7485</p>
                   <p className="text-sm text-gray-500">24 horas - 7 dias por semana</p>
                 </div>
               </div>
@@ -59,7 +70,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-[#1E3A5F] mb-1">E-mail</h4>
-                  <p className="text-gray-600">contato@eletricista.com.br</p>
+                  <p className="text-gray-600">pedronetoeletricista@gmail.com</p>
                 </div>
               </div>
               
@@ -69,8 +80,8 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-[#1E3A5F] mb-1">Endereço</h4>
-                  <p className="text-gray-600">São Paulo, SP</p>
-                  <p className="text-sm text-gray-500">Atendemos toda região metropolitana</p>
+                  <p className="text-gray-600">São Vicente, SP</p>
+                  <p className="text-sm text-gray-500">Atendemos a região da Baixada Santista</p>
                 </div>
               </div>
             </div>
@@ -79,11 +90,11 @@ export function Contact() {
               <h4 className="text-xl font-semibold mb-2">Emergência?</h4>
               <p className="mb-4">Ligue agora mesmo para atendimento imediato!</p>
               <a 
-                href="tel:11999999999"
+                href="tel:13997177485"
                 className="bg-[#FBBF24] hover:bg-[#f5b517] text-[#1E3A5F] px-6 py-3 rounded-lg font-semibold inline-flex items-center gap-2 transition-all"
               >
                 <Phone className="w-5 h-5" />
-                (11) 99999-9999
+                (13) 99717-7485
               </a>
             </div>
           </div>
@@ -132,7 +143,7 @@ export function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#FBBF24] transition-colors"
-                  placeholder="(11) 99999-9999"
+                  placeholder="(13) 99999-9999"
                 />
               </div>
               
@@ -177,7 +188,7 @@ export function Contact() {
                 className="w-full bg-[#1E3A5F] hover:bg-[#152d4a] text-white px-6 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all"
               >
                 <Send className="w-5 h-5" />
-                Enviar Mensagem
+                Enviar via WhatsApp
               </button>
             </form>
           </div>

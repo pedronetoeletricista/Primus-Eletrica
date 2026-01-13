@@ -52,20 +52,6 @@ export function WhyChooseUs() {
             );
           })}
         </div>
-        
-        <div className="mt-16 bg-gradient-to-r from-[#1E3A5F] to-[#0f1e33] rounded-xl p-8 md:p-12 text-white text-center">
-          <h3 className="text-3xl mb-4">Área de Cobertura</h3>
-          <p className="text-xl text-gray-300 mb-6">
-            Atendemos toda a região metropolitana e cidades vizinhas
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 text-sm">
-            {['São Paulo', 'Guarulhos', 'Osasco', 'Santo André', 'São Bernardo', 'Diadema', 'Mauá', 'Barueri'].map((city) => (
-              <span key={city} className="bg-white/10 px-4 py-2 rounded-full">
-                {city}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

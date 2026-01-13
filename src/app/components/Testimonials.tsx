@@ -2,28 +2,28 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Carlos Silva',
+    name: 'Cliente 1',
     rating: 5,
-    text: 'Serviço excelente! Tive um problema elétrico às 2h da manhã e eles vieram rapidamente. Profissionalismo nota 10!',
-    date: 'Há 2 semanas'
+    text: 'Aguardando importação dos depoimentos do Google Meu Negócio',
+    date: 'Recente'
   },
   {
-    name: 'Maria Santos',
+    name: 'Cliente 2',
     rating: 5,
-    text: 'Muito competentes e preço justo. Fizeram toda a instalação elétrica da minha casa nova. Recomendo!',
-    date: 'Há 1 mês'
+    text: 'Aguardando importação dos depoimentos do Google Meu Negócio',
+    date: 'Recente'
   },
   {
-    name: 'João Oliveira',
+    name: 'Cliente 3',
     rating: 5,
-    text: 'Atendimento rápido e eficiente. Resolveram meu problema de curto-circuito em menos de uma hora.',
-    date: 'Há 3 semanas'
+    text: 'Aguardando importação dos depoimentos do Google Meu Negócio',
+    date: 'Recente'
   },
   {
-    name: 'Ana Paula',
+    name: 'Cliente 4',
     rating: 5,
-    text: 'Profissionais qualificados e educados. Fizeram um ótimo trabalho na manutenção preventiva do meu apartamento.',
-    date: 'Há 1 semana'
+    text: 'Aguardando importação dos depoimentos do Google Meu Negócio',
+    date: 'Recente'
   }
 ];
 
@@ -34,7 +34,7 @@ export function Testimonials() {
         <div className="text-center mb-12">
           <h2 className="text-4xl text-[#1E3A5F] mb-4">O Que Dizem Nossos Clientes</h2>
           <p className="text-gray-600 text-lg">
-            Avaliações reais de quem confia no nosso trabalho
+            Avaliações reais do Google Meu Negócio
           </p>
         </div>
         
@@ -53,6 +53,17 @@ export function Testimonials() {
               </div>
             </div>
           ))}
+        </div>
+        
+        <div className="text-center mt-8">
+          <a 
+            href="https://share.google/j3jMPrVUzqObHuCXU" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#1E3A5F] hover:text-[#FBBF24] font-semibold underline"
+          >
+            Ver todas as avaliações no Google
+          </a>
         </div>
       </div>
     </section>
