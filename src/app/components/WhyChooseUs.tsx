@@ -14,7 +14,7 @@ const benefits = [
   {
     icon: Award,
     title: 'Experiência Comprovada',
-    description: 'Mais de 15 anos de atuação em serviços elétricos residenciais.'
+    description: 'Mais de 03 anos de atuação em serviços elétricos residenciais.'
   },
   {
     icon: HeartHandshake,
