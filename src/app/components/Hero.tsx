@@ -7,11 +7,11 @@ export function Hero() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
 
-          {/* Logo (mantida, mas menos protagonista) */}
+          {/* Logo (branding, não SEO) */}
           <div className="mb-4">
             <img 
               src={logo} 
-              alt="Primus Elétrica" 
+              alt="Primus Elétrica - Eletricista na Baixada Santista" 
               className="w-24 h-24 mx-auto opacity-90"
             />
           </div>
@@ -22,22 +22,23 @@ export function Hero() {
             <span className="font-semibold">Atendimento Emergencial 24h</span>
           </div>
 
-          {/* HEADLINE orientada a problema */}
+          {/* H1 — ÚNICO da página (SEO local) */}
           <h1 className="text-4xl md:text-5xl mb-5 font-bold">
-            <span className="text-[#FBBF24]">
-              Problema elétrico agora?
-            </span>
-            <br />
-            Eletricista imediato na Baixada Santista
+            Eletricista em Santos, São Vicente e Praia Grande
           </h1>
 
-          {/* Subheadline direta */}
-          <p className="text-lg text-gray-300 mb-6 max-w-2xl mx-auto">
-            Curto-circuito, disjuntor desarmando, tomada queimando ou falta de energia.
-            Atendimento rápido, seguro e sem terceirização.
+          {/* Copy de impacto (não é heading) */}
+          <p className="text-xl md:text-2xl mb-4 font-semibold text-[#FBBF24]">
+            Problema elétrico agora? Atendimento imediato.
           </p>
 
-          {/* Lista de dores (pré-filtro) */}
+          {/* Subheadline descritiva */}
+          <p className="text-lg text-gray-300 mb-6 max-w-2xl mx-auto">
+            Curto-circuito, disjuntor desarmando, tomada queimando ou falta de energia.
+            Serviço rápido, seguro e sem terceirização na Baixada Santista.
+          </p>
+
+          {/* Lista de dores */}
           <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm text-gray-200">
             {[
               'Disjuntor caindo',
@@ -72,17 +73,22 @@ export function Hero() {
             </a>
           </div>
 
-          {/* Cobertura com reforço local */}
+          {/* Cobertura local — agora como H2 */}
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-3xl mx-auto">
-            <h3 className="text-xl font-semibold mb-2 text-[#FBBF24]">
-              Eletricista local — atendimento rápido
-            </h3>
+            <h2 className="text-xl font-semibold mb-2 text-[#FBBF24]">
+              Eletricista local com atendimento rápido
+            </h2>
+
             <p className="text-gray-300 mb-4">
-              Atendemos sem intermediários nas cidades:
+              Atendimento sem intermediários nas cidades:
             </p>
+
             <div className="flex flex-wrap justify-center gap-3">
               {['Praia Grande', 'São Vicente', 'Cubatão', 'Santos'].map((city) => (
-                <span key={city} className="bg-white/20 px-4 py-2 rounded-full text-white font-medium">
+                <span
+                  key={city}
+                  className="bg-white/20 px-4 py-2 rounded-full text-white font-medium"
+                >
                   {city}
                 </span>
               ))}
@@ -90,7 +96,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Prova de autoridade */}
+        {/* Prova de autoridade (sem headings para não poluir semântica) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
             <div className="text-4xl font-bold text-[#FBBF24] mb-2">24/7</div>
