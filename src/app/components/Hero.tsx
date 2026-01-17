@@ -1,37 +1,58 @@
-import { Phone, Clock } from 'lucide-react';
+import { Phone, Clock, AlertTriangle } from 'lucide-react';
 import logo from "../../assets/PRIMUS.png";
-
 
 export function Hero() {
   return (
     <section className="relative bg-gradient-to-br from-[#1E3A5F] to-[#0f1e33] text-white py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
-          {/* Logo */}
-          <div className="mb-6">
+
+          {/* Logo (mantida, mas menos protagonista) */}
+          <div className="mb-4">
             <img 
               src={logo} 
               alt="Primus Elétrica" 
-              className="w-32 h-32 mx-auto"
+              className="w-24 h-24 mx-auto opacity-90"
             />
           </div>
-          
-          <div className="inline-flex items-center gap-2 bg-[#FBBF24] text-[#1E3A5F] px-4 py-2 rounded-full mb-6">
+
+          {/* Selo de urgência */}
+          <div className="inline-flex items-center gap-2 bg-[#FBBF24] text-[#1E3A5F] px-4 py-2 rounded-full mb-5">
             <Clock className="w-5 h-5" />
-            <span className="font-semibold">Atendimento 24 Horas</span>
+            <span className="font-semibold">Atendimento Emergencial 24h</span>
           </div>
-          
-          <h1 className="text-5xl md:text-6xl mb-6">
-            <span className="text-[#FBBF24]">Primus Elétrica</span>
+
+          {/* HEADLINE orientada a problema */}
+          <h1 className="text-4xl md:text-5xl mb-5 font-bold">
+            <span className="text-[#FBBF24]">
+              Problema elétrico agora?
+            </span>
             <br />
-            Quando Você Mais Precisa
+            Eletricista imediato na Baixada Santista
           </h1>
-          
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Atendimento emergencial 24h para resolver seus problemas elétricos com segurança, 
-            rapidez e profissionalismo na Baixada Santista.
+
+          {/* Subheadline direta */}
+          <p className="text-lg text-gray-300 mb-6 max-w-2xl mx-auto">
+            Curto-circuito, disjuntor desarmando, tomada queimando ou falta de energia.
+            Atendimento rápido, seguro e sem terceirização.
           </p>
-          
+
+          {/* Lista de dores (pré-filtro) */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm text-gray-200">
+            {[
+              'Disjuntor caindo',
+              'Tomada queimando',
+              'Queda de energia',
+              'Risco elétrico'
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2">
+                <AlertTriangle className="w-4 h-4 text-[#FBBF24]" />
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <a 
               href="https://wa.me/5513997177485" 
@@ -40,22 +61,24 @@ export function Hero() {
               className="bg-[#FBBF24] hover:bg-[#f5b517] text-[#1E3A5F] px-8 py-4 rounded-lg font-semibold text-lg flex items-center gap-2 transition-all shadow-lg hover:shadow-xl"
             >
               <Phone className="w-5 h-5" />
-              Ligar Agora - Emergência
+              Resolver agora no WhatsApp
             </a>
-            
+
             <a 
               href="#contato"
               className="bg-transparent border-2 border-white hover:bg-white hover:text-[#1E3A5F] px-8 py-4 rounded-lg font-semibold text-lg transition-all"
             >
-              Solicitar Orçamento
+              Solicitar orçamento
             </a>
           </div>
-          
-          {/* Área de Cobertura */}
+
+          {/* Cobertura com reforço local */}
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-3xl mx-auto">
-            <h3 className="text-2xl font-semibold mb-3 text-[#FBBF24]">Área de Cobertura</h3>
-            <p className="text-lg text-gray-300 mb-4">
-              Atendemos a região da Baixada Santista
+            <h3 className="text-xl font-semibold mb-2 text-[#FBBF24]">
+              Eletricista local — atendimento rápido
+            </h3>
+            <p className="text-gray-300 mb-4">
+              Atendemos sem intermediários nas cidades:
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {['Praia Grande', 'São Vicente', 'Cubatão', 'Santos'].map((city) => (
@@ -66,24 +89,26 @@ export function Hero() {
             </div>
           </div>
         </div>
-        
+
+        {/* Prova de autoridade */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
             <div className="text-4xl font-bold text-[#FBBF24] mb-2">24/7</div>
-            <div className="text-gray-300">Disponível sempre</div>
+            <div className="text-gray-300">Emergências atendidas</div>
           </div>
-          
+
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
             <div className="text-4xl font-bold text-[#FBBF24] mb-2">+100</div>
-            <div className="text-gray-300">Clientes satisfeitos</div>
+            <div className="text-gray-300">Avaliações positivas</div>
           </div>
-          
+
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-[#FBBF24] mb-2">3 Anos</div>
-            <div className="text-gray-300">De experiência</div>
+            <div className="text-4xl font-bold text-[#FBBF24] mb-2">3+</div>
+            <div className="text-gray-300">Anos de experiência</div>
           </div>
         </div>
       </div>
     </section>
   );
 }
+
