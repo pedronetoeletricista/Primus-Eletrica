@@ -79,7 +79,7 @@ export function Testimonials() {
         {/* Link Google */}
         <div className="text-center mt-8">
           <a 
-            href="https://www.google.com/search?sca_esv=83052c8b1ac74795&sxsrf=ANbL-n5XBxXq5iZpvtCidQoVPiD5CB4DTw:1768306288894&q=avalia%C3%A7%C3%B5es+sobre+primus+el%C3%A9trica"
+            href="https://business.google.com/v/pedro-neto-eletricista/01403602437324096086/bd8d/_/rev/?gclid=%7Bgclid%7D"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#1E3A5F] hover:text-[#FBBF24] font-semibold underline"
