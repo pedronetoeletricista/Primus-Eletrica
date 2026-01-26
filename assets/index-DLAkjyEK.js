@@ -1,0 +1,1 @@
+import{r as a,j as r,H as i,B as n,A as s}from"./prerender-x243Y7y0.js";var e={},o;function c(){if(o)return e;o=1;var t=a();return e.createRoot=t.createRoot,e.hydrateRoot=t.hydrateRoot,e}var d=c();d.createRoot(document.getElementById("root")).render(r.jsx(i,{children:r.jsx(n,{children:r.jsx(s,{})})}));
