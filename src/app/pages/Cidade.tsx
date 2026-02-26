@@ -1,5 +1,5 @@
 import { SiteLayout } from "../layouts/SiteLayout";
-import { Hero } from "../components/Hero";
+import { Hero } from "../components/Hero (cidades)";
 import { Testimonials } from "../components/Testimonials";
 import { Services } from "../components/Services";
 import { WhyChooseUs } from "../components/WhyChooseUs";
@@ -63,7 +63,7 @@ export function Cidade({ cidade }: { cidade: "Santos" | "São Vicente" | "Praia 
       <Hero
         headline={cfg.headline}
         subheadline={cfg.subheadline}
-        description={`Atendimento rápido em ${cfg.cidade}. Disjuntor desarmando, tomada queimando, curto-circuito, chuveiros e emergências 24h. Serviço seguro, sem terceirização.`}
+        description={`Atendimento rápido em ${cfg.cidade}. Disjuntor desarmando, tomada queimando, curto-circuito, chuveiro. Serviço seguro e limpo.`}
       />
 
       {/* Aqui está o “segredo”: mesmas seções do Home */}

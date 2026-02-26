@@ -77,22 +77,7 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
             </a>
           </div>
 
-          {/* Cobertura local */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-3xl mx-auto">
-            <h2 className="text-xl font-semibold mb-2 text-[#FBBF24]">
-              Eletricista local com atendimento rápido
-            </h2>
 
-            <p className="text-gray-300 mb-4">Atendimento sem intermediários nas cidades:</p>
-
-            <div className="flex flex-wrap justify-center gap-3">
-              {cities.map((city) => (
-                <span key={city} className="bg-white/20 px-4 py-2 rounded-full text-white font-medium">
-                  {city}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* Prova de autoridade */}
