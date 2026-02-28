@@ -5,7 +5,7 @@ export function MobileFixedButtons() {
     <div className="fixed bottom-0 left-0 right-0 bg-white border-t-2 border-gray-200 shadow-lg z-50 md:hidden">
       <div className="grid grid-cols-2 gap-0">
         <a
-          href="tel:013997177485"
+          href="tel:013996070733"
           className="flex items-center justify-center gap-2 bg-[#1E3A5F] hover:bg-[#152d4a] text-white py-4 font-semibold transition-all active:scale-95"
         >
           <Phone className="w-5 h-5" />
@@ -13,7 +13,7 @@ export function MobileFixedButtons() {
         </a>
         
         <a
-          href="https://wa.me/5513997177485"
+          href="https://wa.me/5513992130719"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white py-4 font-semibold transition-all active:scale-95"
