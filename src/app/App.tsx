@@ -2,9 +2,10 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Produtos } from "./pages/Produtos";
 import { Cidade } from "./pages/Cidade";
+import { Privacidade } from "./pages/Privacidade";
 import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
 import { MobileFixedButtons } from "./components/MobileFixedButtons";
-import { Privacidade } from "./pages/Privacidade";
+
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (

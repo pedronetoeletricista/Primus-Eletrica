@@ -3,8 +3,9 @@ import { Hero } from "../components/Hero (cidades)";
 import { Testimonials } from "../components/Testimonials";
 import { Services } from "../components/Services";
 import { WhyChooseUs } from "../components/WhyChooseUs";
-import { Contact } from "../components/Contact";
-import { Footer } from "../components/Footer";
+import { Contact } from "../components/Contact (cidades)";
+import { Footer } from "../components/Footer (cidades)";
+
 
 type CidadeConfig = {
   slug: string;
