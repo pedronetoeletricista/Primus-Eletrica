@@ -1,6 +1,6 @@
 import { Phone, MessageCircle } from 'lucide-react';
 
-export function MobileFixedButtonsCidades() {
+export function MobileFixedButtons() {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white border-t-2 border-gray-200 shadow-lg z-50 md:hidden">
       <div className="grid grid-cols-2 gap-0">
