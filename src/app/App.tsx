@@ -9,14 +9,20 @@ import { Privacidade } from "./pages/Privacidade";
 import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
 import { MobileFixedButtons } from "./components/MobileFixedButtons";
 
-// IMPORTS dos duplicados (note o espaço antes de (cidades))
+// IMPORTAR as versões de cidades
 import { FloatingWhatsApp as FloatingWhatsAppCidades } from "./components/FloatingWhatsApp (cidades)";
 import { MobileFixedButtons as MobileFixedButtonsCidades } from "./components/MobileFixedButtons (cidades)";
 
 function Layout({ children }: { children: React.ReactNode }) {
   const { pathname } = useLocation();
 
-  const CITY_ROUTES = ["/santos", "/sao-vicente", "/praia-grande", "/cubatao"];
+  const CITY_ROUTES = [
+    "/santos",
+    "/sao-vicente",
+    "/praia-grande",
+    "/cubatao",
+  ];
+
   const isCityPage = CITY_ROUTES.includes(pathname);
 
   return (
