@@ -1,6 +1,6 @@
 import { MessageCircle } from 'lucide-react';
 
-export function FloatingWhatsAppCidades() {
+export function FloatingWhatsApp() {
   return (
     <a
       href="https://wa.me/5513997177485"
