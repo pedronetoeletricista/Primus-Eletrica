@@ -16,6 +16,8 @@ import { MobileFixedButtons as MobileFixedButtonsCidades } from "./components/Mo
 function Layout({ children }: { children: React.ReactNode }) {
   const { pathname } = useLocation();
 
+  const cleanPath = pathname.replace(/\/+$/, "") || "/"; // remove trailing "/"
+
   const CITY_ROUTES = [
     "/santos",
     "/sao-vicente",
@@ -23,7 +25,7 @@ function Layout({ children }: { children: React.ReactNode }) {
     "/cubatao",
   ];
 
-  const isCityPage = CITY_ROUTES.includes(pathname);
+  const isCityPage = CITY_ROUTES.includes(cleanPath);
 
   return (
     <div className="min-h-screen bg-white">
@@ -43,7 +45,6 @@ function Layout({ children }: { children: React.ReactNode }) {
     </div>
   );
 }
-
 export default function App() {
   return (
     <Layout>
