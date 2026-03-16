@@ -1,5 +1,5 @@
 import { Phone, Clock, AlertTriangle } from "lucide-react";
-import logo from "../../assets/PRIMUS.png";
+import logo from "../../assets/PRIMUS01.png";
 
 type HeroProps = {
   headline?: string;     // H1
