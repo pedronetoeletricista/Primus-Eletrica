@@ -23,7 +23,8 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
   className="relative text-white py-20 px-4 bg-cover bg-center"
   style={{ backgroundImage: `url(${heroBg})` }}
 >
-      <div className="max-w-6xl mx-auto">
+<div className="absolute inset-0 bg-gradient-to-br from-[#1E3A5F]/90 to-[#0f1e33]/90"></div>
+      <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-8">
           {/* Logo */}
           <div className="mb-4">
