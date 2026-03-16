@@ -3,11 +3,11 @@ import logo from "../../assets/PRIMUS.png";
 import heroBg from "../../assets/hero-bg.png";
 
 type HeroProps = {
-  headline?: string;     // H1
-  subheadline?: string;  // frase amarela
-  description?: string;  // parágrafo cinza
-  cities?: string[];     // chips de cidades
-  painPoints?: string[]; // lista com AlertTriangle
+  headline?: string;
+  subheadline?: string;
+  description?: string;
+  cities?: string[];
+  painPoints?: string[];
 };
 
 export function Hero({
@@ -20,12 +20,15 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
 }: HeroProps) {
   return (
     <section
-  className="relative text-white py-20 px-4 bg-cover bg-center"
-  style={{ backgroundImage: `url(${heroBg})` }}
->
-<div className="absolute inset-0 bg-gradient-to-br from-[#1E3A5F]/90 to-[#0f1e33]/90"></div>
+      className="relative text-white py-20 px-4 bg-cover bg-center"
+      style={{ backgroundImage: `url(${heroBg})` }}
+    >
+      {/* Overlay escuro + blur para melhorar leitura */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1E3A5F]/90 to-[#0f1e33]/90 backdrop-blur-[2px]"></div>
+
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-8">
+          
           {/* Logo */}
           <div className="mb-4">
             <img
@@ -34,7 +37,6 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
               className="w-24 h-24 mx-auto opacity-90"
             />
           </div>
-
 
           {/* Selo */}
           <div className="inline-flex items-center gap-2 bg-[#FBBF24] text-[#1E3A5F] px-4 py-2 rounded-full mb-5">
@@ -46,7 +48,9 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
           <h1 className="text-4xl md:text-5xl mb-5 font-bold">{headline}</h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl mb-4 font-semibold text-[#FBBF24]">{subheadline}</p>
+          <p className="text-xl md:text-2xl mb-4 font-semibold text-[#FBBF24]">
+            {subheadline}
+          </p>
 
           {/* Description */}
           <p className="text-lg text-gray-300 mb-6 max-w-2xl mx-auto whitespace-pre-line">
@@ -89,11 +93,16 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
               Eletricista local com atendimento rápido
             </h2>
 
-            <p className="text-gray-300 mb-4">Atendimento sem intermediários nas cidades:</p>
+            <p className="text-gray-300 mb-4">
+              Atendimento sem intermediários nas cidades:
+            </p>
 
             <div className="flex flex-wrap justify-center gap-3">
               {cities.map((city) => (
-                <span key={city} className="bg-white/20 px-4 py-2 rounded-full text-white font-medium">
+                <span
+                  key={city}
+                  className="bg-white/20 px-4 py-2 rounded-full text-white font-medium"
+                >
                   {city}
                 </span>
               ))}
@@ -104,8 +113,12 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
         {/* Prova de autoridade */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-[#FBBF24] mb-2">24h/Dia 7d/semana</div>
-            <div className="text-gray-300">Para atendimentos emergênciais</div>
+            <div className="text-4xl font-bold text-[#FBBF24] mb-2">
+              24h/Dia 7d/semana
+            </div>
+            <div className="text-gray-300">
+              Para atendimentos emergênciais
+            </div>
           </div>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
@@ -114,12 +127,16 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
           </div>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-[#FBBF24] mb-2">Há mais de 4 Anos</div>
-            <div className="text-gray-300">Solucionando problemas elétricos</div>
+            <div className="text-4xl font-bold text-[#FBBF24] mb-2">
+              Há mais de 4 Anos
+            </div>
+            <div className="text-gray-300">
+              Solucionando problemas elétricos
+            </div>
           </div>
         </div>
+
       </div>
     </section>
   );
 }
-
