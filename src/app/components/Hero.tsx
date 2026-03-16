@@ -18,17 +18,7 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
   painPoints = ["Disjuntor caindo", "Tomada queimando", "Queda de energia", "Risco elétrico"],
 }: HeroProps) {
   return (
-    <section className="relative bg-gradient-to-br from-[#1E3A5F] to-[#0f1e33] text-white py-20 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-8">
-          {/* Logo */}
-          <div className="mb-4">
-            <img
-              src={logo}
-              alt="Primus Elétrica - Eletricista na Baixada Santista"
-              className="w-24 h-24 mx-auto opacity-90"
-            />
-          </div>
+
 <section className="relative text-white py-20 px-4 overflow-hidden">
 
   {/* MOSAICO DE IMAGENS */}
