@@ -1,5 +1,6 @@
 import { Phone, Clock, AlertTriangle } from "lucide-react";
 import logo from "../../assets/PRIMUS.png";
+import heroBg from "../../assets/hero-bg.png";
 
 type HeroProps = {
   headline?: string;     // H1
@@ -18,7 +19,10 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
   painPoints = ["Disjuntor caindo", "Tomada queimando", "Queda de energia", "Risco elétrico"],
 }: HeroProps) {
   return (
-    <section className="relative bg-gradient-to-br from-[#1E3A5F] to-[#0f1e33] text-white py-20 px-4">
+    <section
+  className="relative text-white py-20 px-4 bg-cover bg-center"
+  style={{ backgroundImage: `url(${heroBg})` }}
+>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
           {/* Logo */}
