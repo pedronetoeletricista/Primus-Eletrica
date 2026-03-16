@@ -18,21 +18,18 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
   painPoints = ["Disjuntor caindo", "Tomada queimando", "Queda de energia", "Risco elétrico"],
 }: HeroProps) {
   return (
+    <section className="relative bg-gradient-to-br from-[#1E3A5F] to-[#0f1e33] text-white py-20 px-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-8">
+          {/* Logo */}
+          <div className="mb-4">
+            <img
+              src={logo}
+              alt="Primus Elétrica - Eletricista na Baixada Santista"
+              className="w-24 h-24 mx-auto opacity-90"
+            />
+          </div>
 
-<section className="relative text-white py-20 px-4 overflow-hidden">
-
-  {/* MOSAICO DE IMAGENS */}
-  <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-4 opacity-20">
-    <img src="/images/eletrica1.webp" className="w-full h-full object-cover" />
-    <img src="/images/quadro.webp" className="w-full h-full object-cover" />
-    <img src="/images/chuveiro.webp" className="w-full h-full object-cover" />
-    <img src="/images/manutencao.webp" className="w-full h-full object-cover" />
-  </div>
-
-  {/* OVERLAY PARA LEGIBILIDADE */}
-  <div className="absolute inset-0 bg-gradient-to-br from-[#1E3A5F]/95 to-[#0f1e33]/95"></div>
-
-  <div className="relative z-10 max-w-6xl mx-auto">
 
           {/* Selo */}
           <div className="inline-flex items-center gap-2 bg-[#FBBF24] text-[#1E3A5F] px-4 py-2 rounded-full mb-5">
