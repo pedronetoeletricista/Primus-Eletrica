@@ -24,11 +24,11 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       {/* Overlay escuro + blur para melhorar leitura */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1E3A5F]/90 to-[#0f1e33]/90 backdrop-blur-[2px]"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1E3A5F]/50 to-[#0f1e33]/50 backdrop-blur-[2px]"></div>
 
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-8">
-          
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-3xl mx-auto">
           {/* Logo */}
           <div className="mb-4">
             <img
@@ -88,7 +88,7 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
           </div>
 
           {/* Cobertura local */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-3xl mx-auto">
+          
             <h2 className="text-xl font-semibold mb-2 text-[#FBBF24]">
               Eletricista local com atendimento rápido
             </h2>
