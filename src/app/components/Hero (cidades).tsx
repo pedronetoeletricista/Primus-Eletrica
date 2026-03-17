@@ -1,12 +1,13 @@
 import { Phone, Clock, AlertTriangle } from "lucide-react";
 import logo from "../../assets/PRIMUS.png";
+import heroBg from "../../assets/hero-bg-vt.png";
 
 type HeroProps = {
-  headline?: string;     // H1
-  subheadline?: string;  // frase amarela
-  description?: string;  // parágrafo cinza
-  cities?: string[];     // chips de cidades
-  painPoints?: string[]; // lista com AlertTriangle
+  headline?: string;
+  subheadline?: string;
+  description?: string;
+  cities?: string[];
+  painPoints?: string[];
 };
 
 export function Hero({
@@ -18,9 +19,16 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
   painPoints = ["Disjuntor caindo", "Tomada queimando", "Queda de energia", "Risco elétrico"],
 }: HeroProps) {
   return (
-    <section className="relative bg-gradient-to-br from-[#1E3A5F] to-[#0f1e33] text-white py-20 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section
+      className="relative text-white py-20 px-4 bg-cover bg-center"
+      style={{ backgroundImage: `url(${heroBg})` }}
+    >
+      {/* Overlay escuro + blur para melhorar leitura */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1E3A5F]/50 to-[#0f1e33]/50 backdrop-blur-[2px]"></div>
+
+      <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-8">
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-3xl mx-auto">
           {/* Logo */}
           <div className="mb-4">
             <img
@@ -40,7 +48,9 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
           <h1 className="text-4xl md:text-5xl mb-5 font-bold">{headline}</h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl mb-4 font-semibold text-[#FBBF24]">{subheadline}</p>
+          <p className="text-xl md:text-2xl mb-4 font-semibold text-[#FBBF24]">
+            {subheadline}
+          </p>
 
           {/* Description */}
           <p className="text-lg text-gray-300 mb-6 max-w-2xl mx-auto whitespace-pre-line">
@@ -77,14 +87,38 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
             </a>
           </div>
 
+          {/* Cobertura local */}
+          
+            <h2 className="text-xl font-semibold mb-2 text-[#FBBF24]">
+              Eletricista local com atendimento rápido
+            </h2>
 
+            <p className="text-gray-300 mb-4">
+              Atendimento sem intermediários nas cidades:
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-3">
+              {cities.map((city) => (
+                <span
+                  key={city}
+                  className="bg-white/20 px-4 py-2 rounded-full text-white font-medium"
+                >
+                  {city}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Prova de autoridade */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-[#FBBF24] mb-2">24h/Dia 7d/semana</div>
-            <div className="text-gray-300">Para atendimentos emergênciais</div>
+            <div className="text-4xl font-bold text-[#FBBF24] mb-2">
+              24h/Dia 7d/semana
+            </div>
+            <div className="text-gray-300">
+              Para atendimentos emergênciais
+            </div>
           </div>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
@@ -93,12 +127,16 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
           </div>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-[#FBBF24] mb-2">Há mais de 4 Anos</div>
-            <div className="text-gray-300">Solucionando problemas elétricos</div>
+            <div className="text-4xl font-bold text-[#FBBF24] mb-2">
+              Há mais de 4 Anos
+            </div>
+            <div className="text-gray-300">
+              Solucionando problemas elétricos
+            </div>
           </div>
         </div>
+
       </div>
     </section>
   );
 }
-
