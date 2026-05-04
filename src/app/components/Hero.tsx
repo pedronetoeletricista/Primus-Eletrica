@@ -14,7 +14,7 @@ export function Hero({
   headline = "Eletricista em Santos, Cubatão, São Vicente e Praia Grande",
   subheadline = "Problema elétrico agora? Atendimento imediato.",
   description = `Curto-circuito, disjuntor desarmando, tomada queimando ou falta de energia.
-Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
+Serviço rápido, seguro e com profissionais capacitados na Baixada Santista.`,
   cities = ["Praia Grande", "São Vicente", "Cubatão", "Santos"],
   painPoints = ["Disjuntor caindo", "Tomada queimando", "Queda de energia", "Risco elétrico"],
 }: HeroProps) {

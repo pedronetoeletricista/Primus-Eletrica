@@ -90,26 +90,23 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
           {/* Cobertura local */}
           
             <h2 className="text-xl font-semibold mb-2 text-[#FBBF24]">
-              Pedro Neto e Rimário Rodrigues prontos para o seu atendimento.
+              Eletricista local com atendimento rápido
             </h2>
 
             <p className="text-gray-300 mb-4">
-              Serviços de instalações e manutenções:
+              Atendimento sem intermediários nas cidades:
             </p>
 
             <div className="flex flex-wrap justify-center gap-3">
-  <span className="bg-white/20 px-4 py-2 rounded-full text-white font-medium">
-    Residencial
-  </span>
-
-  <span className="bg-white/20 px-4 py-2 rounded-full text-white font-medium">
-    Comercial
-  </span>
-
-  <span className="bg-white/20 px-4 py-2 rounded-full text-white font-medium">
-    Predial
-  </span>
-</div>
+              {cities.map((city) => (
+                <span
+                  key={city}
+                  className="bg-white/20 px-4 py-2 rounded-full text-white font-medium"
+                >
+                  {city}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
 

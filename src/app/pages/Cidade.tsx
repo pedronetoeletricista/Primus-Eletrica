@@ -23,8 +23,8 @@ const CIDADES: Record<string, CidadeConfig> = {
     title: "Eletricista em Santos | Primus Elétrica",
     description:
       "Eletricista em Santos com atendimento 24h. Instalações, reparos, chuveiro, disjuntor caindo, curto-circuito. Atendimento rápido e garantia.",
-    headline: "Eletricista em Santos",
-    subheadline: "Problema elétrico agora? Atendimento imediato.",
+    headline: "Primus Eletrica Santos",
+    subheadline: "Atendimento imediato, conte conosco.",
   },
   "São Vicente": {
     slug: "/sao-vicente",
@@ -32,8 +32,8 @@ const CIDADES: Record<string, CidadeConfig> = {
     title: "Eletricista em São Vicente | Primus Elétrica",
     description:
       "Eletricista em São Vicente com atendimento 24h. Instalações, reparos e emergências. Atendimento rápido e garantia.",
-    headline: "Eletricista em São Vicente",
-    subheadline: "Emergência elétrica? Chego rápido.",
+    headline: "Primus Eletrica São Vicente",
+    subheadline: "Atendimento imediato, conte conosco.",
   },
   "Praia Grande": {
     slug: "/praia-grande",
@@ -41,8 +41,8 @@ const CIDADES: Record<string, CidadeConfig> = {
     title: "Eletricista em Praia Grande | Primus Elétrica",
     description:
       "Eletricista em Praia Grande com atendimento 24h. Instalações, manutenção e emergências. Atendimento rápido e garantia.",
-    headline: "Eletricista em Praia Grande",
-    subheadline: "Atendimento 24h e garantia.",
+    headline: "Primus Eletrica Praia Grande",
+    subheadline: "Atendimento imediato, conte conosco.",
   },
   "Cubatão": {
     slug: "/cubatao",
@@ -50,8 +50,8 @@ const CIDADES: Record<string, CidadeConfig> = {
     title: "Eletricista em Cubatão | Primus Elétrica",
     description:
       "Eletricista em Cubatão com atendimento 24h. Instalações, reparos e emergências. Atendimento rápido e garantia.",
-    headline: "Eletricista em Cubatão",
-    subheadline: "Serviço rápido, seguro e profissional.",
+    headline: "Primus Eletrica Cubatão",
+    subheadline: "Atendimento imediato, conte conosco.",
   },
 };
 
@@ -64,7 +64,7 @@ export function Cidade({ cidade }: { cidade: "Santos" | "São Vicente" | "Praia 
       <Hero
         headline={cfg.headline}
         subheadline={cfg.subheadline}
-        description={`Atendimento rápido em ${cfg.cidade}. Disjuntor desarmando, tomada queimando, curto-circuito, chuveiro. Serviço seguro e limpo.`}
+        description={`Não espere que o pior aconteça, chame quem vai resolver o seu problema.`}
       />
 
       {/* Aqui está o “segredo”: mesmas seções do Home */}
