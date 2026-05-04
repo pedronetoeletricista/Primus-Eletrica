@@ -90,7 +90,7 @@ export function Contact() {
               <h4 className="text-xl font-semibold mb-2">Emergência?</h4>
               <p className="mb-4">Ligue agora mesmo para atendimento imediato!</p>
               <a 
-                href="tel:13997177485"
+                href="tel:013997177485"
                 className="bg-[#FBBF24] hover:bg-[#f5b517] text-[#1E3A5F] px-6 py-3 rounded-lg font-semibold inline-flex items-center gap-2 transition-all"
               >
                 <Phone className="w-5 h-5" />
