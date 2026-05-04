@@ -117,7 +117,7 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
             <div className="text-4xl font-bold text-[#FBBF24] mb-2">
-              24h/Dia 7d/semana
+              Sempre disponiveis
             </div>
             <div className="text-gray-300">
               Para atendimentos emergênciais
@@ -125,7 +125,7 @@ Serviço rápido, seguro e sem terceirização na Baixada Santista.`,
           </div>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-[#FBBF24] mb-2">+100</div>
+            <div className="text-4xl font-bold text-[#FBBF24] mb-2">100+</div>
             <div className="text-gray-300">Avaliações positivas</div>
           </div>
 
