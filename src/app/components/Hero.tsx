@@ -11,8 +11,8 @@ type HeroProps = {
 };
 
 export function Hero({
-  headline = "Eletricista em Santos, Cubatão, São Vicente e Praia Grande",
-  subheadline = "Problema elétrico agora? Atendimento imediato.",
+  headline = "Primus Eletrica | Pedro Neto e Rimario Rodrigues",
+  subheadline = "Eletricista em Santos, Cubatão, São Vicente e Praia Grande",
   description = `Curto-circuito, disjuntor desarmando, tomada queimando ou falta de energia.
 Serviço rápido, seguro e com profissionais capacitados na Baixada Santista.`,
   cities = ["Praia Grande", "São Vicente", "Cubatão", "Santos"],
@@ -90,11 +90,11 @@ Serviço rápido, seguro e com profissionais capacitados na Baixada Santista.`,
           {/* Cobertura local */}
           
             <h2 className="text-xl font-semibold mb-2 text-[#FBBF24]">
-              Eletricista local com atendimento rápido
+              Chegamos em até 30 minutos
             </h2>
 
             <p className="text-gray-300 mb-4">
-              Atendimento sem intermediários nas cidades:
+              Atendemos as cidades:
             </p>
 
             <div className="flex flex-wrap justify-center gap-3">
@@ -114,7 +114,7 @@ Serviço rápido, seguro e com profissionais capacitados na Baixada Santista.`,
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
             <div className="text-4xl font-bold text-[#FBBF24] mb-2">
-              24h/Dia 7d/semana
+              Sempre disponiveis
             </div>
             <div className="text-gray-300">
               Para atendimentos emergênciais
