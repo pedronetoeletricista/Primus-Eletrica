@@ -23,7 +23,7 @@ const CIDADES: Record<string, CidadeConfig> = {
     title: "Eletricista em Santos | Primus Elétrica",
     description:
       "Eletricista em Santos com atendimento 24h. Instalações, reparos, chuveiro, disjuntor caindo, curto-circuito. Atendimento rápido e garantia.",
-    headline: "Primus Eletrica Santos",
+    headline: "Primus Elétrica Santos",
     subheadline: "Atendimento imediato, conte conosco.",
   },
   "São Vicente": {
@@ -38,11 +38,11 @@ const CIDADES: Record<string, CidadeConfig> = {
   "Praia Grande": {
     slug: "/praia-grande",
     cidade: "Praia Grande",
-    title: "Eletricista em Praia Grande | Primus Elétrica",
+    title: "Eletricista Praia Grande | Primus Elétrica",
     description:
       "Eletricista em Praia Grande com atendimento 24h. Instalações, manutenção e emergências. Atendimento rápido e garantia.",
-    headline: "Primus Eletrica Praia Grande",
-    subheadline: "Atendimento imediato, conte conosco.",
+    headline: "Eletricista Praia Grande",
+    subheadline: "Primus Elétrica, Excelência em cada ligação.",
   },
   "Cubatão": {
     slug: "/cubatao",
