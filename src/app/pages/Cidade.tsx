@@ -64,7 +64,7 @@ export function Cidade({ cidade }: { cidade: "Santos" | "São Vicente" | "Praia 
       <Hero
         headline={cfg.headline}
         subheadline={cfg.subheadline}
-        description={`Não espere que o pior aconteça, chame quem vai resolver o seu problema.`}
+        description={`Atendimento em até 40 min em qualquer bairro de {cfg.cidade}.`}
       />
 
       {/* Aqui está o “segredo”: mesmas seções do Home */}
