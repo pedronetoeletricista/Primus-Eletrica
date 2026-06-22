@@ -137,7 +137,7 @@ Serviço rápido, seguro e com profissionais capacitados na Baixada Santista.`,c
       inline-block\r
       bg-[#1E3A5F]\r
       hover:bg-[#294d7a]\r
-      text-[#FBBF24]\r
+      text-[#FFFFFF]\r
       font-bold\r
       text-lg\r
       px-8\r
