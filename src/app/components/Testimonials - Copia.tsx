@@ -77,17 +77,17 @@ export function Testimonials() {
         </div>
         
         {/* Link Google */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-		<div className="text-4xl font-bold text-[#FBBF24] mb-2">
+        <div className="text-center mt-8">
           <a 
             href="https://business.google.com/v/pedro-neto-eletricista/01403602437324096086/bd8d/_/rev/?gclid=%7Bgclid%7D"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-[#1E3A5F] hover:text-[#FBBF24] font-semibold underline"
           >
             Ver todas as avaliações no Google
           </a>
         </div>
-		</div>
+
       </div>
     </section>
   );
