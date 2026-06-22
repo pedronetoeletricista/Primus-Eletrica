@@ -86,7 +86,7 @@ export function Testimonials() {
       inline-block
       bg-[#1E3A5F]
       hover:bg-[#294d7a]
-      text-[#FBBF24]
+      text-[#FFFFFF]
       font-bold
       text-lg
       px-8
