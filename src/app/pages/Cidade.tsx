@@ -42,7 +42,7 @@ const CIDADES: Record<string, CidadeConfig> = {
     description:
       "Eletricista em Praia Grande com atendimento 24h. Instalações, manutenção e emergências. Atendimento rápido e garantia.",
     headline: "Eletricista Praia Grande",
-    subheadline: "Primus Elétrica, Excelência em cada ligação.",
+    subheadline: "Atendimento em até 40 min em qualquer bairro de Praia Grande.",
   },
   "Cubatão": {
     slug: "/cubatao",
@@ -64,7 +64,7 @@ export function Cidade({ cidade }: { cidade: "Santos" | "São Vicente" | "Praia 
       <Hero
         headline={cfg.headline}
         subheadline={cfg.subheadline}
-        description={`Atendimento em até 40 min em qualquer bairro de {cfg.cidade}.`}
+        description={`Não espere que o pior aconteça, chame quem vai resolver o seu problema.`}
       />
 
       {/* Aqui está o “segredo”: mesmas seções do Home */}
