@@ -77,17 +77,29 @@ export function Testimonials() {
         </div>
         
         {/* Link Google */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-		<div className="text-4xl font-bold text-[#FBBF24] mb-2">
-          <a 
-            href="https://business.google.com/v/pedro-neto-eletricista/01403602437324096086/bd8d/_/rev/?gclid=%7Bgclid%7D"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ver todas as avaliações no Google
-          </a>
-        </div>
-		</div>
+      <div className="mt-10 flex justify-center">
+  <a
+    href="https://business.google.com/v/pedro-neto-eletricista/01403602437324096086/bd8d/_/rev/?gclid=%7Bgclid%7D"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      inline-block
+      bg-[#1E3A5F]
+      hover:bg-[#294d7a]
+      text-[#FBBF24]
+      font-bold
+      text-lg
+      px-8
+      py-4
+      rounded-lg
+      shadow-lg
+      transition-all
+      duration-300
+    "
+  >
+    Ver as avaliações mais recentes no perfil do Google
+  </a>
+</div>
       </div>
     </section>
   );
