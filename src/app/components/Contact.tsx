@@ -14,7 +14,7 @@ export function Contact() {
     e.preventDefault();
     
     // Envia via WhatsApp com mensagem pré-preenchida
-    const message = `Olá! Gostaria de solicitar um orçamento:
+    const message = `Olá! Gostaria de solicitar um serviço:
     
 *Nome:* ${formData.name}
 *Email:* ${formData.email}
